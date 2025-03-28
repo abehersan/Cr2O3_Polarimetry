@@ -169,22 +169,6 @@ class cr2o3_polarimetry():
         Pf = Pf/IPi
         return np.round(np.real(Pf), decimals=SDIG)
 
-    def calc_Pf_elements(self,Q):
-        NQ = self.calc_NQ(Q)
-        MPQ = self.calc_MperpQ(Q)
-        POLAXES = self.calc_polaxes(Q)
-        MperpQ=POLAXES @ MPQ
-        _,Mpy,Mpz=MperpQ
-
-        Ix=np.conj(NQ)*NQ+np.conj(Mpy)*Mpy+np.conj(Mpz)*Mpz+2*self.P0*np.imag(Mpy*np.conj(Mpz))
-        Iy=np.conj(NQ)*NQ+np.conj(Mpy)*Mpy+np.conj(Mpz)*Mpz+2*self.P0*np.real(NQ*np.conj(Mpy))
-        Iz=np.conj(NQ)*NQ+np.conj(Mpy)*Mpy+np.conj(Mpz)*Mpz+2*self.P0*np.real(NQ*np.conj(Mpz))
-
-        Pxz=2*(np.real(NQ*np.conj(Mpz))-self.P0*np.imag(NQ*np.conj(Mpy)))
-        print(Pxz/Ix)
-
-        return
-
     def calc_polarimetry_matrix(self, Q):
         polmat = np.zeros((3,3))
         polmat[0,:] = self.calc_Pf(Q, np.array([1,0,0])*self.P0)
