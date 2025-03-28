@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mag2polSampleFile>
+    <version major="7" minor="0" patch="4"/>
+    <general source="neutron"/>
+    <sample>
+        <symmetry spaceGroup="R-3c" axesSetting="2">
+            <magneticSymmetry numberOfIrreps="1" numberOfOperators="1" sphericalCoordinates="false" localSusceptibility="false" useBasisVectors="true" useIrrepsBasisVectors="true">
+                <propagationVector inBrillouinZone="false" qx="0" qy="0" qz="0"/>
+                <operators>
+                    <operator irrep="1" symmX="x" symmY="y" symmZ="z" symmU="u" symmV="v" symmW="w" phase="0"/>
+                </operators>
+                <irreducibleRepresentations activeIrreps="1">
+                    <irrep number="2">
+                        <site number="1" basisVector1="1"/>
+                    </irrep>
+                </irreducibleRepresentations>
+            </magneticSymmetry>
+        </symmetry>
+        <cellParameters a="4.957" b="4.957" c="13.5923" alpha="90" beta="90" gamma="120"/>
+        <atoms sites="2">
+            <atom label="MCR3" userDefined="false" rigidBody="false">
+                <position x="0" y="0" z="0.34751"/>
+                <occupation occ="1"/>
+                <DW aniso="false" B="0.2" B11="0" B22="0" B33="0" B12="0" B13="0" B23="0"/>
+                <magneticMoment Rx="1.65138" Ry="0" Rz="0" Ix="0" Iy="0" Iz="0" phase="0"/>
+                <irrep Rx="1" Ry="1" Rz="1" Ix="1" Iy="1" Iz="1"/>
+                <plot show="true" atomScale="10" spinScale="1" red="0" green="0" blue="255"/>
+            </atom>
+            <atom label="O2" userDefined="false" rigidBody="false">
+                <position x="0.3057" y="0" z="0.25"/>
+                <occupation occ="1"/>
+                <DW aniso="false" B="0.35" B11="0" B22="0" B33="0" B12="0" B13="0" B23="0"/>
+                <plot show="false" atomScale="10" spinScale="1" red="255" green="0" blue="0"/>
+            </atom>
+        </atoms>
+        <scaleAndExtinction scale="1" lambdaHalf="0" shelXtype="anisotropic" x="0" x11="0" x22="0" x33="0" x12="0" x23="0" x13="0" useBeckerCoppens="false" domainRadius="0" mosaicSpread="0" distribution="Lorentzian"/>
+        <twins number="1" tolerance="0.01">
+            <twin R11="1" R12="0" R13="0" R21="0" R22="1" R23="0" R31="0" R32="0" R33="1" population="1"/>
+        </twins>
+        <magneticDomains number="1">
+            <magneticDomain symmX="x" symmY="y" symmZ="z" timeInversion="false" chiral="false" kDomain="1" population="1"/>
+        </magneticDomains>
+        <absorptionCorrection>
+            <crystalFaces number="6">
+                <crystalFace h="1" k="0" l="0" distance="2.5"/>
+                <crystalFace h="-1" k="0" l="0" distance="2.5"/>
+                <crystalFace h="0" k="1" l="0" distance="2.5"/>
+                <crystalFace h="0" k="-1" l="0" distance="2.5"/>
+                <crystalFace h="0" k="0" l="1" distance="1"/>
+                <crystalFace h="0" k="0" l="-1" distance="1"/>
+            </crystalFaces>
+            <integrationGrid nx="10" ny="10" nz="10"/>
+            <cameraOrientation frameRight="+x" frameUp="-y"/>
+            <offsets>
+                <sample x="0" y="0" z="0" circleRadius="2.5"/>
+                <camera x="0" y="0" chi="0" zoom="1"/>
+            </offsets>
+            <colors>
+                <crosshairColor red="255" green="0" blue="0"/>
+                <edgeColor red="0" green="0" blue="255"/>
+                <selectedEdgeColor red="255" green="125" blue="0"/>
+                <planeColor red="255" green="255" blue="255" alpha="125"/>
+                <selectedPlaneColor red="255" green="255" blue="0" alpha="125"/>
+                <bgrColor red="255" green="255" blue="255"/>
+            </colors>
+            <crystalFrames path=""/>
+        </absorptionCorrection>
+    </sample>
+    <plotPreferences>
+        <cellBoundaries aMin="0" aMax="0.7" bMin="0" bMax="0.7" cMin="0" cMax="1"/>
+        <rotationMatrix R11="-0.061" R12="-0.2" R13="0.978" R21="0.587" R22="0.785" R23="0.197" R31="-0.807" R32="0.586" R33="0.07"/>
+        <lightRotationMatrix R11="1" R12="0" R13="0" R21="0" R22="1" R23="0" R31="0" R32="0" R33="1"/>
+        <visibleBox left="-13.59" right="13.59" bottom="-24.04" top="24.04"/>
+        <projectionType perspective="false" depth="-20" focus="-100"/>
+        <coordinateAxes scale="1" dx="0" dy="0">
+            <axesLabels fontSize="17" aDx="0" aDy="0" bDx="0" bDy="0" cDx="0" cDy="0"/>
+        </coordinateAxes>
+        <legend scale="1" dx="0" dy="0">
+            <legendLabels fontSize="17" dx="0" dy="0"/>
+        </legend>
+    </plotPreferences>
+    <instrument name="custom" wavelength="3.189" polarization="1" cellEfficiency="1">
+        <axes BLx="+x" BLy="+y" BLz="+z"/>
+        <geometry mode="normal beam" diffractionDirection="right" chiQuadrant="0" blindReflectionAction="0"/>
+        <rotationSenses theta="CCW" omega="CCW" chi="CW" phi="CW" nu="CW"/>
+        <orientationMatrix UB11="0.232943" UB12="0" UB13="0" UB21="0.116472" UB22="0" UB23="0.201735" UB31="0" UB32="-0.0735711" UB33="0"/>
+        <verticalSampleAxis h="-0.45" k="0.89" l="0"/>
+        <limitsAndOffsets>
+            <theta min="0" max="180" offset="0"/>
+            <omega min="-180" max="180" offset="0"/>
+            <chi min="-180" max="180" offset="0"/>
+            <phi min="-180" max="180" offset="0"/>
+            <nu min="-20" max="20" offset="0"/>
+        </limitsAndOffsets>
+    </instrument>
+    <fitParameters refineNuclear="false" purelyMagnetic="false" refineFlippingRatios="false">
+        <settings weight="0" maxIterations="100" convergenceCriterium="0.005" ignoreAdditionalSCphases="true" useMultipolesWithInts="true"/>
+        <results iterations="2" chiSquare="114.784" reducedChiSquare="14.348"/>
+        <dataSets>
+            <fliFile path="C:/Users/hernandez_j/Documents/PSI/DataAnalysis/Cr2O3_Polarimetry/data/C2_10m2.fli"/>
+            <intFile path=""/>
+        </dataSets>
+        <constraints number="0"/>
+        <refinementFlags>
+            <atoms>
+                <atom label="MCR3">
+                    <magneticMoment Rx="1" Ry="0" Rz="0" Ix="0" Iy="0" Iz="0" phase="0"/>
+                    <sigmaMagneticMoment Rx="0.1" Ry="0" Rz="0" Ix="0" Iy="0" Iz="0" phase="0"/>
+                    <multipoles>
+                        <orbital Z="0" C1-1="0" ph1-1="0" C10="0" ph10="0" C11="0"/>
+                    </multipoles>
+                </atom>
+                <atom label="O2"/>
+            </atoms>
+            <magneticDomains domain1Pop="0"/>
+            <sigmaMagneticDomains domain1Pop="0"/>
+            <phase volumeFraction="0"/>
+            <sigmaPhase volumeFraction="0"/>
+        </refinementFlags>
+    </fitParameters>
+</mag2polSampleFile>
