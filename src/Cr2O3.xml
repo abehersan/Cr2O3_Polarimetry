@@ -22,7 +22,7 @@
                 <position x="0" y="0" z="0.34751"/>
                 <occupation occ="1"/>
                 <DW aniso="false" B="0.2" B11="0" B22="0" B33="0" B12="0" B13="0" B23="0"/>
-                <magneticMoment Rx="1.651" Ry="0" Rz="0" Ix="0" Iy="0" Iz="0" phase="0"/>
+                <magneticMoment Rx="-1.651" Ry="0" Rz="0" Ix="0" Iy="0" Iz="0" phase="0"/>
                 <irrep Rx="1" Ry="1" Rz="1" Ix="1" Iy="1" Iz="1"/>
                 <plot show="true" atomScale="10" spinScale="1" red="255" green="0" blue="0"/>
             </atom>
@@ -68,9 +68,9 @@
     </sample>
     <plotPreferences>
         <cellBoundaries aMin="0" aMax="0.7" bMin="0" bMax="0.7" cMin="0" cMax="1"/>
-        <rotationMatrix R11="0.614" R12="-0.049" R13="0.788" R21="-0.464" R22="0.785" R23="0.411" R31="-0.639" R32="-0.618" R33="0.459"/>
+        <rotationMatrix R11="-0.005" R12="-0.061" R13="-0.998" R21="-0.482" R22="0.875" R23="-0.051" R31="0.876" R32="0.481" R33="-0.034"/>
         <lightRotationMatrix R11="1" R12="0" R13="0" R21="0" R22="1" R23="0" R31="0" R32="0" R33="1"/>
-        <visibleBox left="-18.1" right="18.1" bottom="-9.85" top="9.85"/>
+        <visibleBox left="-13.59" right="13.59" bottom="-7.39" top="7.39"/>
         <projectionType perspective="false" depth="-20" focus="-100"/>
         <coordinateAxes scale="1" dx="0" dy="0">
             <axesLabels fontSize="17" aDx="0" aDy="0" bDx="0" bDy="0" cDx="0" cDy="0"/>
