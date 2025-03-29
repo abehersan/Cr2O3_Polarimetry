@@ -127,8 +127,8 @@ class cr2o3_polarimetry():
             xj,yj,zj = atom[1:4].astype(float)
             rjcart = self.adir*xj+self.bdir*yj+self.cdir*zj
             Sj = atom[5:8].astype(float)
-            MQ += Sj * np.exp(1j*np.dot(Qcart,rjcart)) * dipolar_formfactor(Qcart/np.sqrt(np.dot(Qcart,Qcart)))[0]
-        MQ *= -self.gyro*self.r0
+            MQ += -Sj*np.exp(1j*np.dot(Qcart,rjcart))+Sj*np.exp(-1j*np.dot(Qcart,rjcart))
+        MQ *= -self.gyro*self.r0*dipolar_formfactor(Qcart/np.sqrt(np.dot(Qcart,Qcart)))[0]
         return np.round(MQ, decimals=SDIG)
 
     def calc_MperpQ(self, Q):
@@ -180,11 +180,11 @@ if __name__ == "__main__":
 
     print("\n\tCr2O3 SNP calculation")
 
-    SA=1.3
-    SB=1.3
+    SA=1.3/2
+    SB=1.3/2
     P0=1.0
     Q = [1,0,-2]
-    cr2o3 = cr2o3_polarimetry(SA=SA,SB=SB,dom="out")
+    cr2o3 = cr2o3_polarimetry(SA=SA,SB=SB,dom="in")
 
     print(f"\tSpin domain: {cr2o3.dom}")
     print(f"\tSpin magnitude of site A: {SA}")
